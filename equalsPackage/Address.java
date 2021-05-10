@@ -1,5 +1,4 @@
 package equalsPackage;
-
 import java.util.Objects;
 
 public class Address {
@@ -13,7 +12,7 @@ public class Address {
 
     public Address() {
     }
-
+    //也要重写equals方法，否则User调用是会出错！
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

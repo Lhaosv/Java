@@ -1,7 +1,8 @@
 package equalsPackage;
-
 import java.util.Objects;
-
+/*
+equals方法重写时要彻底！最好自定义类都重写equals方法
+ */
 public class User {
     String name;
     Address address;
