@@ -1,5 +1,7 @@
 package ArrayPackage;
 
+import ExceptionPackage.MyException;
+
 /**
  *  使用一维数组，模拟栈数据结构
  *  要求：
@@ -34,19 +36,22 @@ public class Mystack {
     }
 
     //定义一个push方法，模拟压栈
-    public void push(Object obj){
+    public void push(Object obj) throws MyException {
         if (index >= elements.length-1){
-            System.out.println("压栈失败，栈以满！");
-            return;
+//            System.out.println("压栈失败，栈以满！");
+//            return;
+            throw new MyException("栈已满，压栈失败!");  //使用自定义异常
+
         }
         index++;  //每压一个元素，栈帧+1
         elements[index] = obj;  // 把压进去的元素放入数组中
         System.out.println("压栈" + obj + "元素成功！ " + "栈帧指向" + index);
     }
-    public void pop(){
+    public void pop() throws MyException {
         if (index < 0){
-            System.out.println("栈为空，弹栈失败！");
-            return;
+//            System.out.println("栈为空，弹栈失败！");
+//            return;
+            throw new MyException("栈为空，弹栈失败"); //使用自定义异常
         }
         System.out.println("弹栈" + elements[index] + "元素成功! " + "栈帧指向" + --index);
 
