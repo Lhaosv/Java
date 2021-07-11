@@ -10,7 +10,7 @@ public class FanxingTest02<T> {  //自定义泛型T
         //ft.dosome(123);    只能填String类型
 
     }
-    public void dosome(T t){  //和自定义泛型一致
+    public void dosome(T t){  //也使用泛型
         System.out.println(t);
     }
 }
