@@ -2,7 +2,7 @@ package CollectionPackage.collections;
 
 import java.util.*;
 /*
-Collections集合工具类
+Collections集合工具类。
  */
 
 public class CollectionsTest01 {
