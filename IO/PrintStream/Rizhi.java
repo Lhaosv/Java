@@ -17,7 +17,7 @@ public class Rizhi {
             //当前日期时间：
             Date date = new Date();
             //日期格式化：
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss");
             String nowtime = sdf.format(date);
             System.out.println(nowtime + ":" + message );
         } catch (FileNotFoundException e) {
