@@ -1,5 +1,8 @@
 package ThreadPackage.ThreadSafe;
-
+/*
+银行账户类
+    不使用线程同步机制，多线程对同一个账户进行取款线程安全问题。
+ */
 public class Account {
     private String IDname;
     private double balance;

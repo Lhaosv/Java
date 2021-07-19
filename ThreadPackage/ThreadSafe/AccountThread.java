@@ -1,5 +1,8 @@
 package ThreadPackage.ThreadSafe;
-
+/*
+线程类
+    多线程模拟两个人同时进行取款操作。
+ */
 public class AccountThread extends Thread {
     //两个线程必须共享同一个账户对象：
     private Account act;
