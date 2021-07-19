@@ -32,17 +32,17 @@ public class Account {
     }
     //取款方法：
     public void qukuan(double money){
-        //取款之前的余额：
-        double before = this.getBalance();
-        //取款之后的余额：
-        double after = this.getBalance() - money;
-        //模拟网络延迟更新余额：
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        //更新余额：
-        this.setBalance(after);
+            //取款之前的余额：
+            double before = this.getBalance();
+            //取款之后的余额：
+            double after = this.getBalance() - money;
+            //模拟网络延迟更新余额：
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //更新余额：
+            this.setBalance(after);
     }
 }
