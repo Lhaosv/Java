@@ -1,4 +1,4 @@
-package ReflectPackage;
+package ReflectPackage.Field;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -10,7 +10,7 @@ public class FieldTest01 {
     public static void main(String[] args) {
         try {
             //获取Student类的字节码文件：
-            Class studentClass = Class.forName("ReflectPackage.Student");
+            Class studentClass = Class.forName("ReflectPackage.Field.Student");
             String classname = studentClass.getName();  //获取完整类名
             System.out.println("完整类名：" + classname);
             String simplename = studentClass.getSimpleName(); //获取简单类名
@@ -43,9 +43,4 @@ public class FieldTest01 {
     }
 
 }
-class Student {
-    public int no;
-    private  String name;
-    int age;
-    boolean sex;
-}
+
